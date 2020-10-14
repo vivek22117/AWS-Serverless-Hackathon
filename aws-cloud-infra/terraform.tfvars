@@ -1,4 +1,4 @@
-profile        = "default"
+profile        = "admin"
 default_region = "us-east-1"
 
 log-retention-in-days = 3
@@ -7,7 +7,7 @@ memory-size           = "384"
 time-out              = "60"
 
 email-lambda-bucket-key   = "lambda/email-processor-lambda/email-processor-lambda.zip"
-verified_email            = "dms-blr-hackathon@amazon.com"
+verified_email            = "vivekmishra22117@gmail.com"
 api_gateway_reminder_path = "message"
 artifactory_bucket_prefix = "aws-serverless-hackathon-artifactory"
 
