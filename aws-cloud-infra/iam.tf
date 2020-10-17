@@ -37,8 +37,8 @@ resource "aws_iam_policy" "lambda_access_policy" {
           "s3:List*"
       ],
       "Resource": [
-          "${aws_s3_bucket.s3_artifactory_bucket.arn}",
-          "${aws_s3_bucket.s3_artifactory_bucket.arn}/*"
+          "${data.terraform_remote_state.backend.outputs.artifactory_bucket_arn}",
+          "${data.terraform_remote_state.backend.outputs.artifactory_bucket_arn}/*"
         ]
     },
     {

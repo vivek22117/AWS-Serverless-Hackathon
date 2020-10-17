@@ -1,5 +1,5 @@
 ############################################
-#     onfigure API Gateway Logging         #
+#     Configure API Gateway Logging         #
 ############################################
 resource "aws_api_gateway_account" "email_processor_config" {
   cloudwatch_role_arn = aws_iam_role.email_processor_role.arn

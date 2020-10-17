@@ -1,19 +1,31 @@
-//Global Variables
+#############################
+# Global Variables          #
+#############################
 variable "profile" {
   type        = string
   description = "AWS Profile name for credentials"
 }
 
 variable "environment" {
-  type        = string
-  default     = "prod"
-  description = "Environment to be configured 'prod'"
+  type = string
+  description = "Environment to deploy, Valid values 'qa', 'dev', 'prod'"
 }
 
 variable "default_region" {
   type        = string
   description = "AWS region to deploy resources"
 }
+
+#################################
+#  Default Variables            #
+#################################
+variable "s3_bucket_prefix" {
+  type = string
+  description = "S3 deployment bucket prefix"
+  default = "doubledigit-tfstate"
+}
+
+
 
 #####========================Lambda Configuration======================#####
 variable "log-retention-in-days" {
