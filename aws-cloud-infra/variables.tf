@@ -7,7 +7,7 @@ variable "profile" {
 }
 
 variable "environment" {
-  type = string
+  type        = string
   description = "Environment to deploy, Valid values 'qa', 'dev', 'prod'"
 }
 
@@ -20,9 +20,9 @@ variable "default_region" {
 #  Default Variables            #
 #################################
 variable "s3_bucket_prefix" {
-  type = string
+  type        = string
   description = "S3 deployment bucket prefix"
-  default = "doubledigit-tfstate"
+  default     = "doubledigit-tfstate"
 }
 
 

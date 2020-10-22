@@ -11,7 +11,7 @@ provider "template" {
 
 #############################################################
 # Terraform configuration block is used to define backend   #
-# Interpolation sytanx is not allowed in Backend            #
+# Interpolation syntax is not allowed in Backend            #
 #############################################################
 terraform {
   required_version = ">= 0.12"
