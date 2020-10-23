@@ -3,7 +3,7 @@ default_region = "us-east-1"
 
 log-retention-in-days = 3
 email-reminder-lambda = "AWSHackathonEmailReminderLambda"
-memory-size           = "384"
+memory-size           = "128"
 time-out              = "60"
 
 email-lambda-bucket-key   = "lambda/email-processor-lambda/email-processor-lambda.zip"

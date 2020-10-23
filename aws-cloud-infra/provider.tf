@@ -15,5 +15,14 @@ provider "template" {
 #############################################################
 terraform {
   required_version = ">= 0.12"
+
+  backend "s3" {
+    profile        = "admin"
+    bucket         = "doubledigit-tfstate-qa-us-east-1"
+    dynamodb_table = "doubledigit-tfstate-qa-us-east-1"
+    key            = "state/qa/aws-notification-lambda/terraform.tfstate"
+    region         = "us-east-1"
+    encrypt        = "true"
+  }
 }
 
